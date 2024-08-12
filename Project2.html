@@ -1,0 +1,255 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project2_Myhobby</title>
+    <style>
+        body {
+            background: linear-gradient(to right,
+                    rgb(182, 244, 146),
+                    rgb(51, 139, 147));
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #118a7e;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid white;
+            background: linear-gradient(to right,
+                    rgb(182, 244, 146),
+                    rgb(51, 139, 147));
+            font-size: 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            transition: all 150ms ease-in-out;
+        }
+
+        button:hover {
+            background: #aeee93;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        span {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 5px 5px 15px rgba(53, 204, 153, 0.4);
+            color: #35cc99;
+        }
+
+        footer {
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 0;
+            color: black;
+            font-size: 20px;
+        }
+
+        .theme-button {
+            font-size: 20px;
+            background: #076F7A;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 50px;
+            border: none;
+            padding: 5px 8px;
+            margin: 20px auto;
+        }
+
+        .theme-button:hover {
+            color: black;
+        }
+
+        body.dark .theme-button {
+            background: #85CD92
+        }
+
+        .book-annotation-pic {
+            border-radius: 15px;
+            translate: 20px;
+            transition: transform ease;
+        }
+
+        .book-annotation-pic:hover {
+            transform: rotateY(180deg) rotateZ(180deg);
+        }
+
+        .gallery-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .gallery div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 150ms ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery .column1 img,
+        .gallery .column3 img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery .column2 img {
+            height: 50%;
+            object-fit: cover;
+        }
+
+        .dark {
+            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+            color: white;
+        }
+
+        .dark .container {
+            background: #385170
+        }
+
+        .dark a {
+            color: #05302b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="theme-button">Dark Mode</button>
+    <div class="container">
+        <h1>
+            📚 Books 📚 <br />
+            Reading is my Hobby
+        </h1>
+        <h2>
+            I read to live more than one life, to be in other places, worlds &
+            universes at the same time
+        </h2>
+        <div class="gallery-wrapper">
+            <img class="book-annotation-pic"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/142/original/bookannotation.jpg?1719167984"
+                alt="annotation in book about historian facts" />
+            <div class="gallery">
+                <div class="column1">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/147/original/oldlibary.jpg?1719168022"
+                        alt="old library" />
+                </div>
+                <div class="column2">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/148/original/chris-lawton-zvKx6ixUhWQ-unsplash.jpg?1719168031"
+                        alt="old books" />
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/163/original/assortment-book-bindings.jpg?1719174343"
+                        alt="stack of books" />
+                </div>
+                <div class="column3">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/145/original/bookowl_resize.jpg?1719168008"
+                        alt="book stack with owl" />
+                </div>
+            </div>
+        </div>
+        <p>
+            <hr />
+            <span class="quote">
+                Reading gives us someplace to go when we have to stay where we are. -
+                Mason Cooley
+            </span>
+            <hr />
+            <br />
+            The history of the book starts with the development of writing, and
+            various other inventions such as paper and printing, and continues
+            through to the modern-day business of book printing. <br />
+            The earliest knowledge society has on the history of books actually
+            predates what would conventionally be called "books" today and begins
+            with scrolls, and sheets of papyrus.
+            <br />
+            <br />
+            🕵️‍♀️
+            <a href="https://en.wikipedia.org/wiki/History_of_books#Chronology" target="_blank"> <strong> Learn about
+                    the History of Books </strong>
+            </a>
+        </p>
+
+        <button class="contact-button"> Dive into the world of books</button>
+        <footer>
+            Coded with 🧠 by
+            <a href="https://www.linkedin.com/in/jannetieve-paul-international" target="_blank">
+                J.P.
+            </a>
+        </footer>
+    </div>
+    <script>
+        function contact() {
+            let genre = prompt("In which genre would you be most intrested in?");
+            let time = prompt("How much minutes would you spend reading a day?");
+            let mail = prompt("Please enter your mail address:");
+            alert("Thank you very much! For your daily amount of " + time + " min reading time  will I send you a list with " + genre + " book recommondations 📖😊");
+        }
+
+        function changeTheme() {
+            let body = document.querySelector("body");
+            // body.classList.toogle("dark"); -- same as below till }
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+                body.classList.add("dark");
+            }
+        }
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+
+        let button = document.querySelector(".contact-button");
+        button.addEventListener("click", contact);
+    </script>
+</body>
+
+</html>
